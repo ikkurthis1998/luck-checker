@@ -3,6 +3,8 @@ import "./App.css";
 import Footer from "./Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+import yes from "./yes1.gif";
+import no from "./no2.gif";
 
 const App = () => {
 	const [game, setGame] = useState(false);
@@ -98,9 +100,17 @@ const App = () => {
 						<button className="check-button" onClick={() => checkLuck()}>
 							Check
 						</button>
-						{luckyMessage && <p className="lucky-message">{luckyMessage}</p>}
+						{luckyMessage && (
+							<>
+								<p className="lucky-message">{luckyMessage}</p>
+								<img className="image" src={yes} />
+							</>
+						)}
 						{unluckyMessage && (
-							<p className="unlucky-message">{unluckyMessage}</p>
+							<>
+								<p className="unlucky-message">{unluckyMessage}</p>
+								<img className="image" src={no} />
+							</>
 						)}
 						{errorMessage && <p className="error">{errorMessage}</p>}
 					</div>

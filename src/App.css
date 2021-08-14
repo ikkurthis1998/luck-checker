@@ -173,3 +173,31 @@ body {
 	width: 250px;
 	text-align: center;
 }
+
+.image {
+	width: 250px;
+}
+
+.icon {
+	font-size: 28px;
+}
+
+.anchor {
+	color: black;
+	text-decoration: none;
+}
+
+.footer-socials {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 300px;
+}
+
+.dev {
+	font-size: 24px;
+}
+
+.footer-container {
+	text-align: center;
+}
